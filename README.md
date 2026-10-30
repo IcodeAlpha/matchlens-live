@@ -1,28 +1,24 @@
-@"
-# MatchLens Live
+# MatchLens Live v0.8 — Broadcast UX update
 
-AI-powered football intelligence for live match storytelling.
+This is a drop-in replacement for your **existing frontend**. Backend remains unchanged.
 
-Built for Microsoft's Inside the Game: Developer Hackathon 2026.
+Changes:
+- Compact scoreboard, tighter hero and KPI cards to bring analysis above the fold.
+- Every visible shot is clickable and keyboard-selectable. Opens the existing event evidence drawer showing player, timestamp, xG proxy, shot outcome, and event ID.
+- New prominent rule-based intelligence spotlight, derived exclusively from the last available five-minute momentum window at the current playback timestamp. No AI or Foundry required.
+- Source data remains synthetic; no hardcoded tactical claims.
 
-## Core Capabilities
-- Synthetic football event simulation
-- Real-time football analytics
-- Expected Threat (xT) intelligence
-- Microsoft Foundry-powered AI narratives
-- Multi-agent match intelligence
-- Broadcast-ready overlays
-- Personalized multilingual fan experiences
+## Install (PowerShell)
 
-## Technology
-- React and TypeScript
-- Python and FastAPI
-- Microsoft Foundry
-- Microsoft Agent Framework
-- Azure Container Apps
-- Azure Static Web Apps
-- Azure Application Insights
+From `C:\Users\USER\matchlens-live`:
 
-## Data
-Demonstration match events will be synthetic.
-"@ | Set-Content README.md
+```powershell
+Expand-Archive -Path "$env:USERPROFILE\Downloads\matchlens_broadcast_v08.zip" -DestinationPath "." -Force
+cd frontend
+npm install
+npm run dev
+```
+
+Run FastAPI separately: `cd backend; uvicorn app.main:app --reload`.
+
+This archive has a top-level `frontend/` folder and overwrites matching frontend files. Back up your current changes before extracting if you have edited them.
