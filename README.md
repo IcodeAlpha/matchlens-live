@@ -2,6 +2,8 @@
 
 This is a drop-in replacement for your **existing frontend**. Backend remains unchanged.
 
+This is a xt/xg custom model
+
 Changes:
 - Compact scoreboard, tighter hero and KPI cards to bring analysis above the fold.
 - Every visible shot is clickable and keyboard-selectable. Opens the existing event evidence drawer showing player, timestamp, xG proxy, shot outcome, and event ID.
