@@ -2,7 +2,7 @@
 
 This is a drop-in replacement for your **existing frontend**. Backend remains unchanged.
 
-This is a xt/xg custom model
+This is a xt/xg custom model and is the first step to involking football
 
 Changes:
 - Compact scoreboard, tighter hero and KPI cards to bring analysis above the fold.
