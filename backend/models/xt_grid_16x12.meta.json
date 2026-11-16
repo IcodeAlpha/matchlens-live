@@ -1,0 +1,11 @@
+{
+  "source": "synthetic simulator (app.simulation.generator)",
+  "real_world_data": false,
+  "matches": 300,
+  "seeds": [
+    10000,
+    10299
+  ],
+  "method": "Markov xT, value iteration, xG(z)=mean simulator shot xG",
+  "unvisited_zones": 0
+}
