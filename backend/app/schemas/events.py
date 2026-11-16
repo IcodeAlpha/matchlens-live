@@ -3,7 +3,7 @@ from typing import Literal
 from pydantic import BaseModel, Field, model_validator
 
 class EventType(str, Enum):
-    PASS='pass'; CARRY='carry'; SHOT='shot'; GOAL='goal'; TACKLE='tackle'; PRESSURE='pressure'; RECOVERY='recovery'; INTERCEPTION='interception'; SAVE='save'; FOUL='foul'; CORNER='corner'; THROW_IN='throw_in'; GOAL_KICK='goal_kick'; KICK_OFF='kick_off'; HALF_TIME='half_time'; FULL_TIME='full_time'
+    PASS='pass'; CARRY='carry'; SHOT='shot'; GOAL='goal'; TACKLE='tackle'; PRESSURE='pressure'; RECOVERY='recovery'; INTERCEPTION='interception'; SAVE='save'; FOUL='foul'; CORNER='corner'; THROW_IN='throw_in'; GOAL_KICK='goal_kick'; KICK_OFF='kick_off'; HALF_TIME='half_time'; FULL_TIME='full_time'; FREE_KICK='free_kick'; YELLOW_CARD='yellow_card'; RED_CARD='red_card'
 
 class MatchEvent(BaseModel):
     event_id: str

@@ -1,0 +1,27 @@
+/*!***********************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[10].use[3]!./app/story.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************/
+/* Match story panel, match picker and narration controls (uses the existing theme variables). */
+.story{padding:18px 20px;margin:0 0 18px}
+.story-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+.story-head small{font:9px 'JetBrains Mono';letter-spacing:.1em;color:var(--muted2)}
+.story-head h2{font:700 24px 'Barlow Condensed';letter-spacing:.02em;margin:4px 0 0;text-transform:uppercase}
+.story-controls{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.story-toggle{display:flex;border:1px solid var(--border);border-radius:7px;overflow:hidden}
+.story-toggle button{background:transparent;color:var(--muted);border:0;padding:7px 13px;font:10px 'JetBrains Mono';letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.story-toggle button.on{background:var(--orange);color:#140a05;font-weight:700}
+.story-toggle button:focus-visible,.story-item:focus-visible,.match-select:focus-visible,.story-lang select:focus-visible{outline:2px solid var(--amber);outline-offset:2px}
+.story-lang{display:flex;align-items:center;gap:8px;font:9px 'JetBrains Mono';letter-spacing:.08em;color:var(--muted2);text-transform:uppercase}
+.story-lang select,.match-select{background:var(--surface2);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:7px 9px;font:11px 'Inter'}
+.match-select{max-width:340px;text-overflow:ellipsis}
+.story-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:8px;max-height:340px;overflow:auto}
+.story-item{width:100%;text-align:left;display:flex;flex-direction:column;gap:4px;background:var(--surface2);border:1px solid var(--border);border-left:3px solid var(--blue);border-radius:8px;padding:10px 12px;color:var(--text);cursor:pointer}
+.story-item.goal{border-left-color:var(--orange)}
+.story-item.red_card{border-left-color:#ef5350}
+.story-item.picked{border-color:var(--amber)}
+.story-kind{font:9px 'JetBrains Mono';letter-spacing:.1em;color:var(--muted2)}
+.story-text{font:13.5px/1.45 'Inter'}
+.story-evidence{font:10px 'JetBrains Mono';color:var(--muted);word-break:break-all}
+.story-empty{color:var(--muted);font-size:13px;margin:6px 0 0}
+.story-foot{margin-top:14px;padding-top:12px;border-top:1px solid var(--border);font-size:11.5px;line-height:1.55;color:var(--muted)}
+.story-foot b{color:var(--good)}
